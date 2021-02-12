@@ -1,0 +1,31 @@
+CSCI 581: Human Centered Computing 
+Design Assignment 1
+
+1.	Description:
+
+	This is an OEM (Original Equipment Manufacturer) Nissan three button keyless entry remote, aka "key fob". An FCC ID on a car remote or wireless key fob is the regulatory certification number used to certify the fob (remote) complies to wireless emissions standards. FCC ID tells the wireless frequency the car remote uses. FCC ID of given key fob is CWTWB1U415.  So by looking up the details, I concluded that it uses 315 MHz [1].  It has Canada Number CAN1788A-FWB1U415.  It is manufactured by ALPS in Mexico. It has Nissan Part Number (Model Number) 28268EA. It has three buttons: Lock, Unlock and Panic. It uses one Lithium metal battery CR2025. The fob is of the black color with approximate length of 2 inches, width of 1 inch and height of 0.2 inches [2]. It has weight of approximately 0.8 ounces [2]. 
+
+	It is made up for Nissan car brand. I concluded that by searching FCC ID in FCC ID database [3]. It is compatible with 2007-2014 Nissan Armada, 2005-2017 Nissan Frontier, 2012-2017 Nissan NV, 2015-2017 Nissan NV200, 2012-2017 Nissan NV3500, 2005-2012 Nissan Pathfinder w/o Prox, 2010-2015 Nissan Titan, 2007-2012 Nissan Versa Hatchback w/o Prox, 2005-2016 Nissan Xterra, and 2007-2012 Nissan Sentra [1]. Interchangeable FCC IDs’ are CWTWB1U733 and CWTWB1U821 [1]. The dimensions, weight and compatibility mentioned above are based on data provided by manufacturer [1] [2] [4].
+
+	The key belongs to the user who is right-handed because right side of the key fob (position in image 4) looks more used as compared to the left side. Usually right-handed person tends to hold key in right palm resulting in friction and loss of smoothness of the surface on right side. Further, the person has habit of dropping the key. I concluded that because there are some tiny pits on the key surface plus little dent below the panic button, visible in image 2, which form when you drop key fob on some hard surface like road. 
+
+	The user uses the fob to open the windows as well as to turn on the interior lights in addition to open a vehicle door.  In images, I can see that unlock button symbol is faded. Unlock button supports following operations as given in the owner manual: unlocking windows, unlocking driver’s door and turning on interior lights [4].
+
+
+2.	Design Improvements:
+
+	We can improve the fob design by making it hands-free key so that we don’t have to push any button to lock or unlock the car.  Key fob consists of a short-range radio transmitter. When you press a button, a coded signal, embedded in radio waves, is sent to a receiver unit installed inside a car. The receiver unit then decodes and translates that signal, which locks or unlocks the car door. So to implement hands-free key, we can add receiver to the key fob along with radio transmitter, making it “transponder”. It will allow the user to keep the key fob in their pocket while approaching the car, as transponder inside the fob will communicate with the receiver system of the car to open the doors.
+
+	We can also improve the looks of the key fob. This key fob is black in color but we can make it more colorful and more stylish by adding colors to it. We can make it into different shades of colors matching the color of the car. Also it can be made into different shapes.
+
+	We can add the functionality of controlling the inside temperature of car to the key fob. Whenever user starts to walk towards his parked car, user can push the button to start cooling or heating inside the car. We can implement this using the same radio waves technology that works for door. There will be two buttons, one for cooling and one for heating. We can set up the program inside the car that gets activated with the button’s signal and starts the air cooling or heating depending on which button has been pressed. 
+
+References:
+
+[1]https://www.keylessremotewarehouse.com/nissan_oem_nissan_3_button_fcc_id_cwtwb1u415_cwtwb1u821_cwtwb1u733_keyless_remote_entry_clicker_control_transmitter_beeper_keyfob_key_fob_car_door_opener_pre_owned_265po_c_p471.htm
+
+[2]https://www.amazon.com/28268ZT-NISSAN-Factory-Keyless Replace/dp/B00A8L1GK4
+
+[3]https://www.fcc.gov/oet/ea/fccid
+
+[4]https://owners.nissanusa.com/content/techpub/ManualsAndGuides/Frontier/2017/2017-Frontier-owner-manual.pdf

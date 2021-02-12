@@ -1,0 +1,21 @@
+Tutorial: Using Eclipse with Hadoop
+Packages you will need:
+1.) Eclipse SSH Plugin
+2.) Terminals Add-on
+Eclipse SSH Plugin:
+Steps:
+1.) Go to: Help > Install New Software > Work with: ‘your eclipse version’
+2.) Select: All files with ‘Remote Systems’
+3.) Restart Eclipse
+4.) Go to: Window > Show View > Other > Select: Remote Systems
+5.) In Remote Systems Window: Right Click ‘Local’
+6.) Select: New Connection > SSH Only
+7.) In the Host Name field, type server connection: ‘129.114.110.79’
+8.) Under the new connection select: Sftp files > My Home
+9.) In ‘User ID’ field, type: ‘your account name’
+Terminals Plugin:
+Steps:
+1.) Go to: https://marketplace.eclipse.org/content/tm-terminal
+2.) Click and drag the ‘Install’ button onto your Eclipse toolbar
+3.) Click through the prompts, and restart Eclipse
+4.) Press: Shift + Ctrl + Alt + T

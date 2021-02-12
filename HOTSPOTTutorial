@@ -1,0 +1,53 @@
+Tutorial on: How to turn your Windows 8 laptop into a Wi-Fi hotspot
+What can you do if you find yourself with access to only a wired internet connection, but you need to connect your mobile to internet wirelessly? Sharing your Windows internet connection via software is tricky to do .There are programs that can help you do it, but they're often difficult to set up and prone to security and reliability issues. So most people don't even try to create Wi-Fi hotspot from laptop. But now it is easy to setup Wi-Fi hotspot because of Windows new feature, Virtual Wi-Fi. For this, you need to have Windows 7 or higher installed on your laptop. For this tutorial, we are using Windows 8 laptop. 
+
+Step 1: Opening Command Prompt: 
+Click on Start. Then type cmd in search box. Right-click the Cmd.exe link and select "Run as Administrator".
+
+Step 2: Check availability: 
+To create a Wi-Fi hotspot, you first need to check whether the hosted network mode is supported by your machine or not. To check this, enter following command:
+netsh wlan show drivers
+
+If you get following message then only you can create Wi-Fi hotspot.
+Hosted network supported: Yes
+
+Step 3: Creating Wi-Fi hotspot: 
+Now type the following command to create WiFi hotspot.
+
+netsh wlan set hostednetwork mode=allow ssid=Name key=8CharacterKey
+
+Replace "Name" with the name you would like to use for your custom network, and "8CharacterKey" with a password that is a little harder to guess. So that security can be maintained. 
+You will see following messages on screen.
+The hosted network mode has been set to allow.
+The SSID of the hosted network has been successfully changed.
+The user key passphrase of the hosted network has been successfully changed.
+
+Step 4: Starting Wi-Fi hotspot :
+To start Wi-Fi hotspot, you need to enable Wi-Fi. For that click on the network icon in the right side of the taskbar and on the Wi-Fi. Then type the following command.
+
+netsh wlan start hostednetwork 
+You will see "The hosted network started" message on screen.
+If you type this command without enabling Wi-Fi, you will get following messages on screen.
+The hosted network couldn’t be started.
+The wireless local area network interface is powered down and doesn't support the reqiured operation.
+
+Step 5:  Allowing other devices to connect to this network:
+Now click on Control Panel. Then click on Network and Internet. Open Network and Sharing Center. You will be able to see your network listed as private network with connection type- Local Area Connection and access type- internet.
+Click on Local Area Connection. Then open properties. Click on sharing tab. Check "Allow other network users to connect through this computer's internet connection." and then click on ok.
+Now you have set up a Wi-Fi hotspot on your laptop.
+Common problem and its solution:
+If you get following message on screen:
+The hostednetwork couldn't be started. The group or resource is not in correct state to perform the requested operation
+                                             or
+The hostednetwork couldn't be started. A device attached to this system is not functioning.
+Then make sure your Wi-Fi is on and Airplane mode is set to off and follow these steps:
+Type Device Manager in search box.
+Click on View tab and check on show hidden devices
+Now you will be able to see Network Adapters. Expand it.
+You will see Microsoft hosted network virtual adapter. Right click on it and then click on Enable in pop up box.
+
+
+Do not close the Command Prompt window. Now you can enable your mobile phone's Wi-Fi and using password you set up in step 3, you can connect to network you have created.
+
+
+
